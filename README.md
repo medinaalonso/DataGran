@@ -1,6 +1,6 @@
 # Backend developer interview question #2
 
-Docker container that runs a Flask app.
+Docker orchestration that runs a Flask app.
 
 ## Installation with Docker compose
 
@@ -9,7 +9,7 @@ Use sh to execute run_docker.sh.
 ```bash
 sh run_docker.sh
 ```
-The sh file executes the services in the docker-compose.yml file , it includes a container for the Flask app and another for a MongoDB.
+The sh file executes the services in the docker-compose.yml file , it includes a container for the Flask app and another for MongoDB.
 
 ## Installation with Dockerfile
 
@@ -24,7 +24,7 @@ Run the container on port 5000.
 docker run -dp 5000:5000 app
 ```
 
-## Usage
+## TEST
 Open Postman and enter the URL:
 ```
 http://127.0.0.1:5000/
@@ -34,7 +34,7 @@ Postman screenshot:
 
 ![home](https://github.com/medinaalonso/DataGran/blob/0cc42d3414b23762ea23c48cd213115e66c45193/Screenshot%20from%202022-02-23%2019-02-59.png)
  
- If the response is a HTML command the installation is sucessfull. 
+ If the response is a HTML command the installation is successful. 
 
 ## New_task
 
@@ -63,7 +63,7 @@ Postman screenshot:
 
 
 ## Get_output
-The following URL uses a GET method pass an ID to the API and then return the values for that specific ID.
+The following URL uses a GET method to pass an ID to the API and then return the values for that specific ID.
 
 ```
 http://192.168.1.65:5000/get_output?id=6216ca77f8a564f13af36cba
